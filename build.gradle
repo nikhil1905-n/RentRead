@@ -22,13 +22,34 @@ repositories {
 }
 
 dependencies {
+	// Spring Boot Starter Data JPA
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Spring Boot Starter Security
 	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+	// Spring Boot Starter Web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// https://mvnrepository.com/artifact/org.modelmapper/modelmapper
+	
+	// ModelMapper
+	implementation 'org.modelmapper:modelmapper:3.2.0'
+
+	// H2 Database (for in-memory testing)
+    runtimeOnly 'com.h2database:h2'
+
+	// Lombok
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
+
+	// Spring Boot Starter Test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// Mockito
+    testImplementation 'org.mockito:mockito-core:5.0.0'
+
+	// Spring Security Test
 	testImplementation 'org.springframework.security:spring-security-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
