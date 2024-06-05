@@ -11,7 +11,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.modelmapper.ModelMapper;
+// import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -50,7 +50,7 @@ public class ControllerTests {
 
     @BeforeEach
     public void setup() {
-        ModelMapper modelMapper = new ModelMapper();
+        // ModelMapper modelMapper = new ModelMapper();
         when(bookService.getAllBooks()).thenReturn(Arrays.asList(
                 new BookDto(1L, "Book 1", "Author 1", "Genre 1", true),
                 new BookDto(2L, "Book 2", "Author 2", "Genre 2", true)
