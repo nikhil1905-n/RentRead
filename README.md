@@ -1,8 +1,9 @@
-# Library Management System API
+# Book Rental System
 
 ## Overview
 
-The Library Management System API is a RESTful API developed using Spring Boot to facilitate the management of books, users, and rentals in a library system. The API allows CRUD operations for books and users, with functionalities such as renting and returning books. It employs Spring Security for authentication and authorization, and uses JWT tokens for securing endpoints.
+The Book Rental System API is a RESTful API developed using Spring Boot to facilitate the management of books, users, and rentals in a library system. The API allows CRUD operations for books and users, with functionalities such as renting and returning books. Built with Spring Boot, Spring Security, JPA, and H2 Database. It includes basic functionalities for user authentication, book management, and rental management.
+
 
 ## Features
 
@@ -43,7 +44,7 @@ The API follows a layered architecture with the following components:
 
 - **Authentication Endpoints**
   - `POST /auth/register` - Register a new user.
-  - `POST /auth/login` - Authenticate and generate JWT token.
+  - `POST /auth/login` - Authenticate a user.
 
 - **Rental Endpoints**
   - `POST /rentals/rent/{bookId}` - Rent a book.
